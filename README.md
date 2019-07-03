@@ -20,6 +20,8 @@ Puesto que la línea que debemo seguir no es recta, si no que tiene multitud de 
 
 El cálculo de la desviación se realiza a tres alturas distintas dentro de la imágen segmentada de la línea obteniendo 3 valores de desviación. Comparando estos tres valores podemos definir si durante la ejecución el vehículo se encuentra en una recta o en cambio se encuentra en una curva para que el movimiento de este sea distinto en cada caso. Si los valores de estas tres desviaciones se encuentra dentro de un rango nos encontraremos en una recta. En cambio, si los valores de estas tres desviaciones se salen de este rango, estaremos en una curva. Este rango se ha definido de forma experimental.
 
+<img width="600px" src="./img/follow_line.png">
+
 ### 1.3 Definición del movimiento del F1: Control PD
 
 Para definir la velocidad linear y angular del Fórmula 1 utilizaremos con control PD basándonos en la información adquirida de la desviación del coche con respecto a la línea.  En primer lugar definimos la componente Proporcional (P). Esta componente la definiremos como una consante Kp por el valor de la desviación entre línea y vehículo previamente definido. El valor de la constante se ha definido de forma experimental. 
@@ -63,6 +65,8 @@ Para quedarnos solo con los puntos pertenecientes a los elementos de la escena q
 
 De esta manera obtendremos una imágen binaria con los bordes de la imagen como primer plano de esta. Con la imagen de bordes tenemos suficientes puntos para realizar una reconstrucción 3D de la escena, pero esta no sería completa ya que solo se reconstruirían los bordes de la escena. Para evitar esto aplicamos la operación morfológica Cierre sobre la imagen de bordes, lo que hará que todos los píxeles pertenecientes a la escena pasen a primer plano y que la reconstrucción final sea completa. 
 
+<img width="600px" src="./img/reconstruccion_3d_2.png">
+
 ### 2.2 Búsqueda de Correspondencias
 
 Una vez que tenemos los puntos de interés tenemos que encontrar la correspondencia de cada uno de los puntos en la imagen derecha del par estéreo. Para ello nos apoyaremos en la Restricción Epipolar lo que nos ayudará a reducir en gran medida el coste computacional del algoritmo.
@@ -89,9 +93,9 @@ Your browser does not support the video tag.
 
 En más detalle algunas imágenes con los resultados finales:
 
-<img width="60%" height="60%" src="./img/reconstruccion_3d.png">
+<img width="600px" src="./img/reconstruccion_3d.png">
 
-<img width="60%" height="60%" src="./img/reconstruccion_3d_1.png">
+<img width="600px" src="./img/reconstruccion_3d_1.png">
 
 
 Se puede apreciar como la reconstrucción obtenida es completa y de buena calidad, dando por alcanzado el objetivo de la práctica. Cabe destacar que el tiempo de ejecución de la práctica es bastante alto por que el algoritmo es muy poco eficiente pudiendosele aplicar diversas modificaciones, como la acotación de la búsqueda de correspondencias a un rango de la línea epipolar, para mejorar su redimiento.
