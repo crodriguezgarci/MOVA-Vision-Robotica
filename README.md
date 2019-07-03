@@ -38,7 +38,7 @@ Tambien cabe destacar que, la velocidad lineal del vehículo cuando este se encu
 
 A continuación podemos ver un vídeo de los resultados obtenidos:
 
-<video controls>
+<video width="600px" height="400px" controls="" preload=""> 
   <source src="follow_line.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
@@ -82,8 +82,7 @@ Para representar el punto en el espacio y que sea representable por el visor de 
 ### 2.4 Resultados obtenidos y conclusiones
 
 El proceso de reconstrucción y los resultados obtenidos se pueden ver en el siguiente video:
-
-<video controls>
+<video width="600px" height="400px" controls="" preload=""> 
   <source src="reconstruccion_3d.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
