@@ -87,5 +87,12 @@ El proceso de reconstrucción y los resultados obtenidos se pueden ver en el sig
 Your browser does not support the video tag.
 </video>
 
+En más detalle algunas imágenes con los resultados finales:
+
+<img width="60%" height="60%" src="./img/reconstruccion_3d.png">
+
+<img width="60%" height="60%" src="./img/reconstruccion_3d_1.png">
+
+
 Se puede apreciar como la reconstrucción obtenida es completa y de buena calidad, dando por alcanzado el objetivo de la práctica. Cabe destacar que el tiempo de ejecución de la práctica es bastante alto por que el algoritmo es muy poco eficiente pudiendosele aplicar diversas modificaciones, como la acotación de la búsqueda de correspondencias a un rango de la línea epipolar, para mejorar su redimiento.
 
