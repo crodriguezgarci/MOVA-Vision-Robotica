@@ -38,13 +38,10 @@ Tambien cabe destacar que, la velocidad lineal del vehículo cuando este se encu
 
 A continuación podemos ver un vídeo de los resultados obtenidos:
 
-```Markdown
-  </div>
-  <video controls>
-    <source src="follow_line.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-  </video>
-```
+<video controls>
+  <source src="follow_line.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
 
 A la vista de los resultados obtenidos podemos concluir que, utilizando un preprocesado bastante sencillo como es un filtro de color en el espacio de color HSV y un control PD podemos resolver esta práctica y programar un comportamiento relativamente complejo para un robot obteniendo resultados bastante buenos, llegando a obtener tiempos de vuelta por debajo del 1 minuto y 20 segundos.
 
@@ -86,13 +83,10 @@ Para representar el punto en el espacio y que sea representable por el visor de 
 
 El proceso de reconstrucción y los resultados obtenidos se pueden ver en el siguiente video:
 
-```Markdown
-  </div>
-  <video controls>
-    <source src="reconstruccion_3d.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-  </video>
-```
+<video controls>
+  <source src="reconstruccion_3d.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
 
 Se puede apreciar como la reconstrucción obtenida es completa y de buena calidad, dando por alcanzado el objetivo de la práctica. Cabe destacar que el tiempo de ejecución de la práctica es bastante alto por que el algoritmo es muy poco eficiente pudiendosele aplicar diversas modificaciones, como la acotación de la búsqueda de correspondencias a un rango de la línea epipolar, para mejorar su redimiento.
 
